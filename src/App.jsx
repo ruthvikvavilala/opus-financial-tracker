@@ -10,6 +10,9 @@ import InsuranceTracker from './components/InsuranceTracker';
 import InvestmentsTracker from './components/InvestmentsTracker';
 import CreditCardsTracker from './components/CreditCardsTracker';
 import CreditScore from './components/CreditScore';
+import BillReminders from './components/BillReminders';
+import ExpenseSplitter from './components/ExpenseSplitter';
+import NetWorth from './components/NetWorth';
 import Analytics from './components/Analytics';
 import QuickAddAI from './components/QuickAddAI';
 import ReceiptScannerModal from './components/ReceiptScannerModal';
@@ -294,6 +297,29 @@ export default function App() {
               insurances={insurances}
               onAddInsurance={handleAddInsurance}
               onPayPremium={handlePayInsurancePremium}
+              currency={selectedCurrency}
+            />
+          )}
+
+          {activeTab === 'reminders' && (
+            <BillReminders
+              onAddTransaction={handleAddTransaction}
+              currency={selectedCurrency}
+            />
+          )}
+
+          {activeTab === 'splitter' && (
+            <ExpenseSplitter
+              currency={selectedCurrency}
+            />
+          )}
+
+          {activeTab === 'networth' && (
+            <NetWorth
+              transactions={transactions}
+              investments={investments}
+              emis={emis}
+              creditCards={creditCards}
               currency={selectedCurrency}
             />
           )}

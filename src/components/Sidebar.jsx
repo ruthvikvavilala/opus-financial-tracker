@@ -24,9 +24,9 @@ export default function Sidebar({ activeTab, setActiveTab }) {
   return (
     <aside style={{
       width: '220px',
-      background: 'rgba(255, 255, 255, 0.85)',
-      backdropFilter: 'blur(12px)',
-      borderRight: '1px solid var(--border-color)',
+      background: 'rgba(15, 23, 42, 0.95)',
+      backdropFilter: 'blur(16px)',
+      borderRight: '1px solid #1e293b',
       padding: '2rem 1rem',
       display: 'flex',
       flexDirection: 'column',

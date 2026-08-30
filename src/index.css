@@ -1,25 +1,25 @@
 :root {
-  /* Light Blue Executive Design Tokens */
-  --bg-primary: #f0f4f9;
-  --bg-secondary: #e6effd;
-  --bg-card: #ffffff;
-  --bg-card-hover: #f4f8ff;
-  --bg-input: #f4f8ff;
+  /* Luxury Dark Blue / Midnight Navy Design Tokens */
+  --bg-primary: #0a0f1d;
+  --bg-secondary: #0f172a;
+  --bg-card: #111827;
+  --bg-card-hover: #1e293b;
+  --bg-input: #1e293b;
   
-  --border-color: #dbe4f0;
-  --border-subtle: #e8f0fe;
+  --border-color: #1e293b;
+  --border-subtle: #334155;
 
-  --text-primary: #18181b;
-  --text-secondary: #5f6368;
-  --text-muted: #80868b;
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+  --text-muted: #64748b;
 
-  --accent-primary: #1a73e8;
-  --accent-blue: #2563eb;
-  --accent-success: #16a34a;
-  --accent-danger: #dc2626;
+  --accent-primary: #3b82f6;
+  --accent-blue: #60a5fa;
+  --accent-success: #22c55e;
+  --accent-danger: #ef4444;
 
-  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.04);
-  --shadow-md: 0 4px 16px -2px rgba(0, 0, 0, 0.06);
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 8px 24px -4px rgba(0, 0, 0, 0.4);
 
   --radius-sm: 8px;
   --radius-md: 14px;
@@ -38,7 +38,7 @@
 
 body {
   font-family: var(--font-main);
-  background: linear-gradient(135deg, #f0f4f9 0%, #e6effd 100%);
+  background: linear-gradient(135deg, #070b19 0%, #0f172a 100%);
   color: var(--text-primary);
   min-height: 100vh;
   line-height: 1.5;
@@ -76,7 +76,7 @@ body {
 }
 
 .glass-card-interactive:hover {
-  border-color: #d4d4d8;
+  border-color: #3b82f6;
   box-shadow: var(--shadow-md);
 }
 
@@ -84,6 +84,7 @@ body {
 h1, h2, h3, h4 {
   letter-spacing: -0.025em;
   font-weight: 700;
+  color: #f8fafc;
 }
 
 .mono-amount {
@@ -108,22 +109,22 @@ h1, h2, h3, h4 {
 }
 
 .btn-primary {
-  background: #18181b;
+  background: #3b82f6;
   color: #ffffff;
 }
 
 .btn-primary:hover {
-  background: #27272a;
+  background: #2563eb;
 }
 
 .btn-secondary {
-  background: #ffffff;
-  color: var(--text-primary);
-  border: 1px solid var(--border-color);
+  background: #1e293b;
+  color: #f8fafc;
+  border: 1px solid #334155;
 }
 
 .btn-secondary:hover {
-  background: #f4f4f5;
+  background: #334155;
 }
 
 .btn-icon {
@@ -134,17 +135,17 @@ h1, h2, h3, h4 {
 .input-field, .select-field, .textarea-field {
   width: 100%;
   padding: 0.6rem 0.85rem;
-  background-color: #ffffff;
-  border: 1px solid var(--border-color);
+  background-color: #0f172a;
+  border: 1px solid #334155;
   border-radius: var(--radius-sm);
-  color: var(--text-primary);
+  color: #f8fafc;
   font-family: var(--font-main);
   font-size: 0.85rem;
   outline: none;
 }
 
 .input-field:focus, .select-field:focus, .textarea-field:focus {
-  border-color: #18181b;
+  border-color: #3b82f6;
 }
 
 /* Table */
@@ -172,15 +173,15 @@ h1, h2, h3, h4 {
 }
 
 .custom-table tbody tr:hover {
-  background-color: #f4f4f5;
+  background-color: #1e293b;
 }
 
 /* Modals */
 .modal-overlay {
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.4);
-  backdrop-filter: blur(4px);
+  background: rgba(3, 7, 18, 0.75);
+  backdrop-filter: blur(8px);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -189,12 +190,13 @@ h1, h2, h3, h4 {
 }
 
 .modal-card {
-  background: #ffffff;
+  background: #111827;
   border-radius: var(--radius-md);
-  border: 1px solid var(--border-color);
+  border: 1px solid #1e293b;
   padding: 1.75rem;
   width: 100%;
-  box-shadow: var(--shadow-modal);
+  color: #f8fafc;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.6);
 }
 
 /* Print Stylesheet */

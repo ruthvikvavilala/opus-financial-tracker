@@ -13,9 +13,9 @@ export default function Navbar({
 }) {
   return (
     <header style={{
-      background: 'rgba(255, 255, 255, 0.85)',
-      backdropFilter: 'blur(12px)',
-      borderBottom: '1px solid var(--border-color)',
+      background: 'rgba(15, 23, 42, 0.95)',
+      backdropFilter: 'blur(16px)',
+      borderBottom: '1px solid #1e293b',
       padding: '1.1rem 3.5rem'
     }}>
       <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', maxWidth: '1280px', margin: '0 auto' }}>

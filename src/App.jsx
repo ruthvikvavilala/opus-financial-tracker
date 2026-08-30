@@ -13,6 +13,7 @@ import CreditScore from './components/CreditScore';
 import BillReminders from './components/BillReminders';
 import ExpenseSplitter from './components/ExpenseSplitter';
 import NetWorth from './components/NetWorth';
+import ExportReports from './components/ExportReports';
 import Analytics from './components/Analytics';
 import QuickAddAI from './components/QuickAddAI';
 import ReceiptScannerModal from './components/ReceiptScannerModal';
@@ -328,6 +329,18 @@ export default function App() {
             <CreditScore
               creditCards={creditCards}
               emis={emis}
+              currency={selectedCurrency}
+            />
+          )}
+
+          {activeTab === 'reports' && (
+            <ExportReports
+              transactions={transactions}
+              budgets={budgets}
+              investments={investments}
+              emis={emis}
+              insurances={insurances}
+              creditCards={creditCards}
               currency={selectedCurrency}
             />
           )}

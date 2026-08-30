@@ -13,7 +13,8 @@ export default function Navbar({
 }) {
   return (
     <header style={{
-      background: '#ffffff',
+      background: 'rgba(255, 255, 255, 0.85)',
+      backdropFilter: 'blur(12px)',
       borderBottom: '1px solid var(--border-color)',
       padding: '1.1rem 3.5rem'
     }}>

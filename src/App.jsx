@@ -14,6 +14,8 @@ import BillReminders from './components/BillReminders';
 import ExpenseSplitter from './components/ExpenseSplitter';
 import NetWorth from './components/NetWorth';
 import ExportReports from './components/ExportReports';
+import TaxOptimizer from './components/TaxOptimizer';
+import AIForecaster from './components/AIForecaster';
 import Analytics from './components/Analytics';
 import QuickAddAI from './components/QuickAddAI';
 import ReceiptScannerModal from './components/ReceiptScannerModal';
@@ -298,6 +300,22 @@ export default function App() {
               insurances={insurances}
               onAddInsurance={handleAddInsurance}
               onPayPremium={handlePayInsurancePremium}
+              currency={selectedCurrency}
+            />
+          )}
+
+          {activeTab === 'tax' && (
+            <TaxOptimizer
+              transactions={transactions}
+              insurances={insurances}
+              currency={selectedCurrency}
+            />
+          )}
+
+          {activeTab === 'predict' && (
+            <AIForecaster
+              transactions={transactions}
+              budgets={budgets}
               currency={selectedCurrency}
             />
           )}

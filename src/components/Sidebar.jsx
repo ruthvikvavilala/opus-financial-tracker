@@ -1,5 +1,5 @@
 import React from 'react';
-import { LayoutDashboard, ReceiptText, PieChart, Target, TrendingUp, CreditCard, Shield, LineChart, ShieldCheck, Bell, Users, Landmark, Printer } from 'lucide-react';
+import { LayoutDashboard, ReceiptText, PieChart, Target, TrendingUp, CreditCard, Shield, LineChart, ShieldCheck, Bell, Users, Landmark, Printer, Calculator, Sparkles } from 'lucide-react';
 
 export default function Sidebar({ activeTab, setActiveTab }) {
   const navItems = [
@@ -10,6 +10,8 @@ export default function Sidebar({ activeTab, setActiveTab }) {
     { id: 'cards', label: 'Credit Cards', icon: CreditCard },
     { id: 'emis', label: 'EMI & Loans', icon: CreditCard },
     { id: 'insurance', label: 'Insurance', icon: Shield },
+    { id: 'tax', label: 'Tax Optimizer', icon: Calculator },
+    { id: 'predict', label: 'AI Predictor', icon: Sparkles },
     { id: 'reminders', label: 'Bill Reminders', icon: Bell },
     { id: 'splitter', label: 'Bill Splitter', icon: Users },
     { id: 'networth', label: 'Net Worth', icon: Landmark },
